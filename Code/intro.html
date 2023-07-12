@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="./images/ED_icon.png" />
+    <title>EDIYA COFFEE</title>
+    <link rel="stylesheet" href="./css/intro.css" />
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const taga = document.querySelectorAll(".hoverplay");
+        taga.forEach((ele) => {
+          ele.addEventListener("mouseover", function () {
+            ele.querySelector(".vid").play();
+          });
+          ele.addEventListener("mouseout", function () {
+            ele.querySelector(".vid").pause();
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="intro_all">
+      <a href="index.html" class="hoverplay">
+        <div class="half">
+          <div class="container">
+            <h2>EDIYA COFFEE<br />BRAND</h2>
+            <div class="con">
+              <video
+                class="vid l_vid"
+                src="./images/ed_l_vid.mp4"
+                muted
+                loop
+              ></video>
+              <p>
+                신메뉴와 인기메뉴까지,<br />이디야커피의 모든 메뉴와 최신 소식을
+                살펴보세요.
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="hoverplay">
+        <div class="half h_r">
+          <div class="container">
+            <h2 id="textrtl">EDIYA COFFEE<br />FRANCHISE</h2>
+            <div class="con">
+              <video
+                class="vid"
+                src="./images/ed_r_vid.mp4#t=6,10"
+                muted
+                loop
+              ></video>
+              <p>
+                창업 비용부터 실제 창업주분들의 생생한 후기까지,<br />성공
+                창업의 길 이디야 커피와 함께하세요.
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </body>
+</html>

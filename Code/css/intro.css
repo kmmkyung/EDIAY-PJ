@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* EDIYA COFFEE PJ 인트로 페이지 CSS - intro.css */
+
+@import url(./reset.css);
+
+/* 공사중! */
+* {
+  /* outline: 1px dotted yellow; */
+}
+
+body {
+  height: 100vh;
+  background-color: #253b82;
+}
+
+#intro_all {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+#intro_all > a {
+  width: 100%;
+  height: 100%;
+}
+
+#intro_all > a:hover .half::before {
+  background: rgba(0, 0, 0, 0);
+}
+
+#intro_all > a:hover .container h2 {
+  -webkit-text-fill-color: rgba(255, 255, 255, 1);
+}
+
+.half {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* .container h2의 부모 */
+  /* overflow: hidden; */
+}
+
+.half::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  transition: all 0.8s;
+}
+
+.container h2 {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: min(6vw,10rem);
+  font-weight: 900;
+  line-height: 110%;
+  -webkit-text-stroke: 1px #fff;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  white-space: nowrap;
+}
+
+#textrtl {
+  direction: rtl;
+}
+
+.con {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.con p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: min(2vw,1.8rem);
+  color: #fff;
+  padding: 4.5vh 0;
+}
+
+.vid {
+  height: min(50vw, 600px);
+  width: min(50vw, 600px);
+  object-fit: cover;
+}
+
+.l_vid {
+  height: min(50vw, 600px);
+  width: 650px;
+}
+
+/* 미디어쿼리 */
+@media screen and (max-width: 1360px) {
+  .vid {
+    height: min(40vw, 500px);
+    width: min(40vw, 500px);
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 900px) {
+  #intro_all{
+    flex-direction: column;
+  }
+
+  .con p {
+    padding: 5% 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .vid {
+    height: min(50vw, 500px);
+    width: min(50vw, 500px);
+  }
+}
+@media screen and (max-width: 650px) {
+  .vid {
+    height: min(60vw, 500px);
+    width: min(60vw, 500px);
+  }
+}

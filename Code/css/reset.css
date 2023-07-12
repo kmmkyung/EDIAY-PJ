@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* EDIYA COFFEE PJ 리셋 CSS - reset.css */
+
+/* 기본 초기화 */
+html, body, h1, h2, h3, h4, h5, p, ul, ol{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* 리스트 초기화 */
+ul, ol{
+    list-style: none;
+}
+
+/* root font */
+html{
+    font-size: 10px;
+}
+
+/* a */
+a{
+    text-decoration: none;
+}
+
+address{
+    margin: 0;
+    padding: 0;
+}
