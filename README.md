@@ -1,2 +1,2 @@
-# EDIAY-PJ
+# EDIAY PJ
 JS | EDIAY COFFEE 사이트☕️
